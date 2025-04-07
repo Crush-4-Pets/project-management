@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap do Projeto Crush4Pets</title>
+    <style>
+        :root {
+            --primary-color: #4a6fa5;
+            --secondary-color: #6eb3b3;
+            --accent-color: #e3784d;
+            --background-color: #f9f9fb;
+            --text-color: #333;
+            --light-gray: #e0e0e0;
+            --success-color: #52c41a;
+            --pending-color: #d9d9d9;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .logo {
+            max-width: 150px;
+        }
+        
+        .project-title {
+            text-align: center;
+            flex-grow: 1;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+        }
+        
+        .date-info {
+            text-align: right;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .sprint {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .sprint-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .sprint-title {
+            font-size: 1.5em;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .sprint-date {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        
+        .task-list {
+            list-style-type: none;
+            padding-left: 10px;
+        }
+        
+        .task-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .checkbox {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 10px;
+            flex-shrink: 0;
+            position: relative;
+            top: 3px;
+        }
+        
+        .checkbox.completed {
+            background-color: var(--success-color);
+            position: relative;
+        }
+        
+        .checkbox.completed::after {
+            content: "✓";
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+        }
+        
+        .checkbox.pending {
+            background-color: var(--pending-color);
+            border: 1px solid #bbb;
+        }
+        
+        .task-description {
+            flex-grow: 1;
+        }
+        
+        .chart-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .chart-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .burndown-chart {
+            width: 100%;
+            height: 400px;
+            max-height: 400px;
+            background-color: white;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-color);
+            font-size: 0.9em;
+        }
+        
+        .current-sprint {
+            border-left: 5px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="DERRICO500x500.png" alt="Logo da Empresa DERRICO" class="logo">
+            <div class="project-title">
+                <h1>Roadmap do Projeto Crush4Pets</h1>
+                <p>Progresso de Desenvolvimento & Planejamento</p>
+            </div>
+            <div class="date-info">
+                <p>Data Atual: 7 de Abril de 2025</p>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Visão Geral do Projeto</h2>
+            <p>Este documento apresenta o roadmap de desenvolvimento para o ecossistema Crush4Pets, que consiste em múltiplos serviços integrados trabalhando juntos para fornecer uma solução abrangente de gestão para pets.</p>
+            <p>O desenvolvimento está estruturado em quatro sprints semanais, com revisões regulares e sessões de planejamento para garantir a entrega pontual de funcionalidades e correções de bugs.</p>
+        </section>
+        
+        <section>
+            <h2>Cronograma de Sprints</h2>
+            
+            <!-- Sprint 1 -->
+            <div class="sprint current-sprint">
+                <div class="sprint-header">
+                    <h3 class="sprint-title">Sprint 1: Configuração Inicial</h3>
+                    <div class="sprint-date">31 de Março - 7 de Abril de 2025</div>
+                </div>
+                <p><strong>Início:</strong> 31 de Março de 2025 | <strong>Revisão:</strong> 7 de Abril de 2025 (Hoje)</p>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Criar uma empresa no GitHub, chamada crush-4-pets</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Enviar todos os 4 projetos para o GitHub</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Criar um projeto orquestrado para automatizar o processo de inicialização local</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Identificar todas as arquiteturas publicadas no Digital Ocean</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Implementar Digital Ocean no projeto de upload, removendo os buckets AWS S3</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox completed"></div>
+                        <div class="task-description">Identificar local de publicação ausente para sistema.crush4pets.com.br</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Sprint 2 -->
+            <div class="sprint">
+                <div class="sprint-header">
+                    <h3 class="sprint-title">Sprint 2: CI/CD & Correção de Bugs</h3>
+                    <div class="sprint-date">8 de Abril - 14 de Abril de 2025</div>
+                </div>
+                <p><strong>Planejamento:</strong> 8 de Abril de 2025 | <strong>Revisão:</strong> 14 de Abril de 2025</p>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Implementar pipeline de CI/CD no GitHub usando Actions</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Corrigir todos os bugs identificados pelo cliente</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Corrigir os problemas de visualização nos mapas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Garantir que o alerta de atualização de software seja exibido ao entrar no aplicativo</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Assegurar o funcionamento correto da localização de georreferenciamento no dispositivo móvel</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Reposicionar o botão "Excluir Conta" na tela de perfil para aumentar sua visibilidade</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Implementar todas as funcionalidades solicitadas pelo cliente</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Implementar a Rede de Distribuição de Conteúdo (CDN) na Digital Ocean</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Atualizar os endereços de armazenamento e recuperação de imagens em todos os projetos</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Redirecionar as notificações de novas mensagens para o ícone "Mais" na tela principal</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Configurar as notificações para aparecerem apenas com mensagens novas não lidas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Revisar e melhorar o processo de atualização de informações para perfis de pets</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Implementar a funcionalidade de exclusão de conta ao acionar o botão correspondente</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Permitir que o usuário clique no telefone de profissionais/anúncios e inicie a ligação</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Garantir que todos os projetos estejam funcionando corretamente</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Sprint 3 -->
+            <div class="sprint">
+                <div class="sprint-header">
+                    <h3 class="sprint-title">Sprint 3: Submissão para as Lojas</h3>
+                    <div class="sprint-date">15 de Abril - 21 de Abril de 2025</div>
+                </div>
+                <p><strong>Planejamento:</strong> 15 de Abril de 2025 | <strong>Revisão:</strong> 21 de Abril de 2025</p>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Submeter todas as correções de bugs para as lojas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Submeter todas as funcionalidades implementadas para as lojas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Preparar documentação para as submissões nas lojas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Conduzir testes pré-submissão</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Sprint 4 -->
+            <div class="sprint">
+                <div class="sprint-header">
+                    <h3 class="sprint-title">Sprint 4: Implementação de Feedback das Lojas</h3>
+                    <div class="sprint-date">22 de Abril - 28 de Abril de 2025</div>
+                </div>
+                <p><strong>Planejamento:</strong> 22 de Abril de 2025 | <strong>Revisão:</strong> 28 de Abril de 2025</p>
+                <ul class="task-list">
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Resolver todos os feedbacks da revisão das lojas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Corrigir todas as solicitações retornadas pelas lojas</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Reenviar aplicativos atualizados</div>
+                    </li>
+                    <li class="task-item">
+                        <div class="checkbox pending"></div>
+                        <div class="task-description">Teste final de garantia de qualidade</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="chart-container">
+            <h2 class="chart-title">Gráfico Burndown do Projeto</h2>
+            <canvas id="burndownChart" class="burndown-chart"></canvas>
+        </section>
+        
+        <footer>
+            <p> 2025 Empresa DERRICO - Projeto Crush4Pets</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Dados do Gráfico Burndown
+        const ctx = document.getElementById('burndownChart').getContext('2d');
+        
+        // Linha de burndown ideal (começando com 20 pontos de história)
+        const idealBurndown = [20, 15, 10, 5, 0];
+        
+        // Burndown real até agora (primeiro sprint completo)
+        const actualBurndown = [20, 14];
+        
+        // Datas de Sprint
+        const sprintDates = [
+            '31 Mar',
+            '7 Abr',
+            '14 Abr',
+            '21 Abr',
+            '28 Abr'
+        ];
+        
+        const burndownChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: sprintDates,
+                datasets: [
+                    {
+                        label: 'Burndown Ideal',
+                        data: idealBurndown,
+                        borderColor: '#4a6fa5',
+                        backgroundColor: 'rgba(74, 111, 165, 0.1)',
+                        borderWidth: 2,
+                        pointBackgroundColor: '#4a6fa5',
+                        pointRadius: 4,
+                        fill: false,
+                        tension: 0.1
+                    },
+                    {
+                        label: 'Burndown Real',
+                        data: actualBurndown,
+                        borderColor: '#e3784d',
+                        backgroundColor: 'rgba(227, 120, 77, 0.1)',
+                        borderWidth: 3,
+                        pointBackgroundColor: '#e3784d',
+                        pointRadius: 6,
+                        fill: false
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Pontos de História Restantes'
+                        },
+                        min: 0,
+                        max: 25
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Datas das Sprints'
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Progresso de Desenvolvimento do Crush4Pets',
+                        font: {
+                            size: 18
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
