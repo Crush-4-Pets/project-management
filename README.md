@@ -43,19 +43,19 @@ O projeto utiliza uma metodologia ágil com sprints semanais:
    - Backup do banco de dados
    - Configuração de DNS e CDN na DigitalOcean
 
-4. **Sprint 6: Implantação do projeto Sistema na Digital Ocean** (22 de Abril - 28 de Abril de 2025)
+4. **Sprint 4: Implantação do projeto Sistema na Digital Ocean** (22 de Abril - 28 de Abril de 2025)
    - Criar novo Droplet
    - Configurar DNS
    - Corrigir problemas mencionados pelo cliente
    - Refazer apontamentos corretos
 
-5. **Sprint 4: Realizar testes e submeter para as lojas** (29 de Abril - 5 de Maio de 2025)
+5. **Sprint 5: Realizar testes e submeter para as lojas** (29 de Abril - 5 de Maio de 2025)
    - Restaurar backup e finalizar ajustes
    - Implementar endpoint para subir imagens na Digital Ocean
    - Testar os fluxos da aplicação React Native
    - Submeter correções para as lojas
 
-6. **Sprint 5: Implementação de Feedback das Lojas** (6 de Maio - 12 de Maio de 2025)
+6. **Sprint 6: Implementação de Feedback das Lojas** (6 de Maio - 12 de Maio de 2025)
    - Ajustes baseados no feedback das lojas
    - Resubmissão das aplicações
    - Garantia de qualidade
