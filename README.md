@@ -33,17 +33,29 @@ O projeto utiliza uma metodologia ágil com sprints semanais:
    - Criação da estrutura organizacional no GitHub
    - Setup do ambiente de desenvolvimento
 
-2. **Sprint 2: CI/CD & Correção de Bugs** (8 de Abril - 14 de Abril de 2025)
-   - Implementação de pipeline CI/CD
-   - Resolução de bugs críticos
-   - Implementação de novas funcionalidades
+2. **Sprint 2: Investigação e Preparação** (8 de Abril - 14 de Abril de 2025)
+   - Investigação do sistema.crush4pets.com.br
+   - Abertura de chamados na AWS
+   - Definição de estratégia de trabalho
 
-3. **Sprint 3: Submissão para as Lojas** (15 de Abril - 21 de Abril de 2025)
-   - Preparação para submissão nas lojas
-   - Testes finais
-   - Documentação
+3. **Sprint 3: Infraestrutura e Implementação** (15 de Abril - 21 de Abril de 2025)
+   - Criação de endpoints para reset de senha
+   - Backup do banco de dados
+   - Configuração de DNS e CDN na DigitalOcean
 
-4. **Sprint 4: Implementação de Feedback das Lojas** (22 de Abril - 28 de Abril de 2025)
+4. **Sprint 6: Implantação do projeto Sistema na Digital Ocean** (22 de Abril - 28 de Abril de 2025)
+   - Criar novo Droplet
+   - Configurar DNS
+   - Corrigir problemas mencionados pelo cliente
+   - Refazer apontamentos corretos
+
+5. **Sprint 4: Realizar testes e submeter para as lojas** (29 de Abril - 5 de Maio de 2025)
+   - Restaurar backup e finalizar ajustes
+   - Implementar endpoint para subir imagens na Digital Ocean
+   - Testar os fluxos da aplicação React Native
+   - Submeter correções para as lojas
+
+6. **Sprint 5: Implementação de Feedback das Lojas** (6 de Maio - 12 de Maio de 2025)
    - Ajustes baseados no feedback das lojas
    - Resubmissão das aplicações
    - Garantia de qualidade
@@ -122,4 +134,4 @@ Para questões relacionadas a este projeto, entre em contato com a equipe Crush4
 
 ---
 
-© 2025 Crush4Pets
+ 2025 Crush4Pets
